@@ -1,76 +1,68 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/matchlegendslogo.webp";
+import project2 from "../assets/projects/goodybody.jpeg";
+import project3 from "../assets/projects/culinlogo.webp";
+import company1 from "../assets/projects/culinlogo.webp";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const HERO_CONTENT = `I am a dedicated full stack developer with a strong background in both web and game development. Since early 2020, I have been working with C# and the .NET Framework to develop MVC web applications. After a year in web development, I transitioned to game development using C# and Unity, where I honed my skills over a period of three years. In the past six months, I have been focusing on frontend technologies, specifically React and Flutter. I have built a portfolio site using React and continue to work on various projects. Currently, I am developing projects with React and working on mobile applications using Flutter. One of the projects I am developing with Flutter is "Culin," an AI-powered cooking app, which I aim to complete.`;
+
+export const ABOUT_TEXT = `My journey as a developer began with a deep curiosity for understanding how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects. I am a dedicated full stack developer with 5 years of experience. During this time, I have spent 4 years working with C#, including 1 year in web application development and 3 years in game development. For the past year, I have been developing full stack mobile applications for iOS and Android.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "2022 - 2024",
+    role: "Game Developer-Software Engineer",
+    company: "Imaginite Studios",
+    description: `Completed the development of approximately 8 different hypercasual games and worked on a match-3 puzzle casual game for a year. Contributed to various aspects of game development, including gameplay mechanics, backend integration, and animation. Implemented network code using Photon to develop a PvP mode, and utilized Unity Multiplayer services for matchmaker solutions to ensure seamless player matchmaking and online gameplay experience.`,
+    technologies: ["Unity", "Java Spring", "C#", "MongoDB", "Unity Services", "Fishnet", "Spine", "Photon Fusion"],
+    image:company1,
   },
   {
     year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    role: "Game Developer",
+    company: "Roco Game Studios",
+    description: `Developed multiplayer and game logic code for the game "Goody Body" using C# within the Unity environment. Implemented multiplayer features utilizing the Mirror library to ensure seamless online gameplay.`,
+    technologies: ["Unity3D", "C#", "Mirror"],
+    image:project2,
   },
   {
     year: "2020 - 2021",
     role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    company: "DNB Analytics",
+    description: `Developed web applications using C# and the .NET Framework, with a focus on MVC technology. Contributed to full stack software development, working with both frontend and backend technologies. Utilized C#, JavaScript, and SQL Lite to implement robust and scalable solutions.`,
+    technologies: ["C#", ".NET Framework", "JavaScript", "HTML", "SQL Lite"],
+    image:project3,
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Match Legend - PVP Match3D Mobile Game",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Match Legend is a PvP match-3 puzzle mobile game where players compete in different leagues based on their scores, facing off against opponents with similar skill levels. I was involved from the beginning of the project through to the soft launch, taking on tasks across all stages of development.",
+    technologies: ["Unity2D", "Photon fusion", "Spring Boot", "Spine","Fishnet"],
+    
   },
   {
-    title: "Task Management App",
+    title: "Goody Boody - PC Game",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+     "Goody Boody is a PC game inspired by Fall Guys, where players navigate through various game mechanics and logic that I developed. I was responsible for implementing all the game logic mechanics, as well as handling the multiplayer network coding to ensure smooth and engaging online gameplay.",
+    technologies: ["Unity3D", "Mirror", "Unity Services"],
   },
   {
-    title: "Portfolio Website",
+    title: "Culin - Full Stack Developer",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "I have been developing this project on my own for about a month. Designed as an AI-powered meal listing application, this project allows users to track their favorite foods and receive personalized recommendations. It also serves as a personal portfolio website, showcasing my projects, skills, and contact information.",
+    technologies: ["Flutter", "Firebase", "BLoC", "RESTful API"],
   },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
+
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Bahcelievler / Istanbul",
+  phoneNo: "+90 536 953 99 26 ",
+  email: "nzmozknylmz@gmail.com",
 };
